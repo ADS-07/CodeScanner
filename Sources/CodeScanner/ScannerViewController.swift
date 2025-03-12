@@ -106,7 +106,7 @@ extension CodeScannerView {
         var previewLayer: AVCaptureVideoPreviewLayer!
 
         private lazy var viewFinder: UIImageView? = {
-            guard let image = UIImage(named: "viewfinder", in: .module, with: nil) else {
+            guard let image = UIImage(named: "viewfinder", in: Bundle(for: ScannerViewController.self), with: nil) else {
                 return nil
             }
 
@@ -117,7 +117,7 @@ extension CodeScannerView {
         
         private lazy var manualCaptureButton: UIButton = {
             let button = UIButton(type: .system)
-            let image = UIImage(named: "capture", in: .module, with: nil)
+            let image = UIImage(named: "capture", in: Bundle(for: ScannerViewController.self), with: nil)
             button.setBackgroundImage(image, for: .normal)
             button.addTarget(self, action: #selector(manualCapturePressed), for: .touchUpInside)
             button.translatesAutoresizingMaskIntoConstraints = false
