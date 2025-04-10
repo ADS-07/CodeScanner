@@ -7,7 +7,7 @@ Pod::Spec.new do
   spec.version          = version
   spec.summary          = "CodeScanner is a SwiftUI framework that makes it easy to scan codes such as QR codes and barcodes"
   spec.homepage         = "https://github.com/twostraws/CodeScanner"
-  spec.license          = { :type => 'MIT', :file => "LICENSE.md" }
+  spec.license          = { :type => 'MIT', :file => "LICENSE" }
   spec.author           = { "Paul Hudson" => "paul@hackingwithswift.com" }
   spec.source           = { :git => "https://github.com/ADS-07/CodeScanner.git", :tag => version }
   spec.platform         = :ios, '13.0'
